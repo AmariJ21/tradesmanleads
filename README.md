@@ -39,32 +39,42 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 1. Clone or copy your project folder to the new device
+cd C:\Your\Project\Location
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 2. Install ALL dependencies (reads from package.json)
+npm install
 
-### Code Splitting
+# This installs everything including:
+# - React
+# - Tailwind CSS v3
+# - lucide-react
+# - All other dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# 3. Run the app
+npm start
+```
 
-### Analyzing the Bundle Size
+## What Gets Installed:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Based on your setup, you need:
+- **Tailwind CSS v3** (NOT v4)
+- **lucide-react** (for icons)
+- **autoprefixer** and **postcss**
 
-### Making a Progressive Web App
+## Files to Transfer:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
+Make sure you copy these to the new device:
+```
+customer-dashboard/
+├── src/               ← Your code
+├── public/            ← Public assets
+├── package.json       ← Lists all dependencies
+├── package-lock.json  ← Locks versions
+├── tailwind.config.js
+├── postcss.config.js
+└── .gitignore
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
